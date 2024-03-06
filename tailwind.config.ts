@@ -11,5 +11,11 @@ const config: Config = {
     extend: {},
   },
   plugins: [],
+  variants: {
+    extend: {
+      filter: ['hover', 'focus'],
+    },
+  },
 };
+
 export default config;

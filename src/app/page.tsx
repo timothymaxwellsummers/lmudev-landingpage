@@ -1,5 +1,34 @@
 import Image from "next/image";
 import Header from "./header";
+import SponsorComponent from "./components/sponsors";
+
+const sponsors = [
+  {
+    alt: "Transistor",
+    source:
+      "https://tailwindui.com/img/logos/158x48/transistor-logo-gray-900.svg",
+    href: "https://transistor.fm",
+  },
+  {
+    alt: "Reform",
+    source: "https://tailwindui.com/img/logos/158x48/reform-logo-gray-900.svg",
+    href: "https://transistor.fm",
+  },
+  {
+    alt: "Tuple",
+    source: "https://tailwindui.com/img/logos/158x48/tuple-logo-gray-900.svg",
+  },
+  {
+    alt: "SavvyCal",
+    source:
+      "https://tailwindui.com/img/logos/158x48/savvycal-logo-gray-900.svg",
+  },
+  {
+    alt: "Statamic",
+    source:
+      "https://tailwindui.com/img/logos/158x48/statamic-logo-gray-900.svg",
+  },
+];
 
 export default function Home() {
   return (
@@ -18,13 +47,13 @@ export default function Home() {
             }}
           />
         </div>
-        <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+        <div className="mx-auto min-h-screen flex items-center max-w-2xl py-16 sm:py-16 lg:py-32">
           <div className="text-center">
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
               LMU{" "}
-              <i className="text-4xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-green-500 to-green-600 pr-2 sm:text-6xl">
+              <code className="text-4xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-green-500 to-green-600 pr-2 sm:text-6xl">
                 Developers
-              </i>
+              </code>
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600">
               Building Apps for and with the LMU Community. Goal: Build a great
@@ -44,43 +73,17 @@ export default function Home() {
                 Learn more <span aria-hidden="true">→</span>
               </a>
             </div>
+
             <div className="mx-auto mt-14 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
-              <img
-                className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-                src="https://tailwindui.com/img/logos/158x48/transistor-logo-gray-900.svg"
-                alt="Transistor"
-                width={158}
-                height={48}
-              />
-              <img
-                className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-                src="https://tailwindui.com/img/logos/158x48/reform-logo-gray-900.svg"
-                alt="Reform"
-                width={158}
-                height={48}
-              />
-              <img
-                className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-                src="https://tailwindui.com/img/logos/158x48/tuple-logo-gray-900.svg"
-                alt="Tuple"
-                width={158}
-                height={48}
-              />
-              <img
-                className="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
-                src="https://tailwindui.com/img/logos/158x48/savvycal-logo-gray-900.svg"
-                alt="SavvyCal"
-                width={158}
-                height={48}
-              />
-              <img
-                className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
-                src="https://tailwindui.com/img/logos/158x48/statamic-logo-gray-900.svg"
-                alt="Statamic"
-                width={158}
-                height={48}
-              />
+              {sponsors.map((sponsor) => (
+                <SponsorComponent
+                  source={sponsor.source}
+                  alt={sponsor.alt}
+                  href={sponsor.href}
+                />
+              ))}
             </div>
+
             <div className="sm:mb-8 sm:flex sm:justify-center pt-8">
               <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
                 Working on solutions for these organisations.&nbsp;
