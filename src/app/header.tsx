@@ -86,9 +86,9 @@ export default function Header() {
                 <div className="py-6">
                   <a
                     href="#"
-                    className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    className="-mx-3 rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 inline-flex gap-2"
                   >
-                    Log in
+                  Contact us <EnvelopeIcon className="h-6 w-6" aria-hidden="true" />
                   </a>
                 </div>
               </div>
