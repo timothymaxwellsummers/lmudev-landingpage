@@ -3,7 +3,7 @@ import { Button } from "./ui/button";
 export default function Footer() {
   return (
     <footer className="relative bg-white border-t border-gray-200 py-4 z-10">
-      <div className="max-w-screen-md flex justify-center mx-auto">
+      <div className="max-w-screen-lg flex justify-center mx-auto">
         <div className="container">
           <div className="grid grid-cols-4">
             <div className="flex flex-col">
