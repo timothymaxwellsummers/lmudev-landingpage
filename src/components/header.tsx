@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import * as React from "react";
 import Link from "next/link";
 import { Dialog } from "@headlessui/react";
@@ -22,6 +22,7 @@ import {
   NavigationMenuViewport,
 } from "@/components/ui/navigation-menu";
 import { Button } from "./ui/button";
+import clsx from "clsx";
 
 const navigation: { title: string; href: string; description: string }[] = [
   {
@@ -52,6 +53,7 @@ const projects: { title: string; href: string; description: string }[] = [
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const ListItem = React.forwardRef<
     React.ElementRef<"a">,
@@ -79,15 +81,41 @@ export default function Header() {
   });
   ListItem.displayName = "ListItem";
 
+ 
+  // Shows the header bg when the user scrolls down
+  useEffect(() => {
+    const handleScroll = () => {
+      const position = window.scrollY;
+      setIsScrolled(position > 0);
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+
+
+
   return (
     <>
-      <header className="absolute inset-x-0 top-0 z-50 ">
+      <header
+        className={clsx(
+          "fixed inset-x-0 top-0 z-50 transition-all duration-300 ease-in-out left-0 right-0",
+          {
+            "bg-transparent": !isScrolled,
+            "bg-white border-b border-gray-200": isScrolled,
+          }
+        )}
+      >
         <nav
-          className="mx-auto max-w-screen-lg flex items-center justify-between p-6 lg:px-8"
+          className="mx-auto max-w-screen-lg flex items-center justify-between p-2 lg:px-8"
           aria-label="Global"
         >
           <div className="flex lg:flex-1">
-            <a href="#" className="-m-1.5 p-1.5">
+            <a href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">LMU Developers</span>
               <img
                 className="h-12 w-auto"
@@ -110,7 +138,7 @@ export default function Header() {
             <NavigationMenu>
               <NavigationMenuList>
                 <NavigationMenuItem>
-                  <Link href="/docs" legacyBehavior passHref>
+                  <Link href="/vision" legacyBehavior passHref>
                     <NavigationMenuLink
                       className={navigationMenuTriggerStyle()}
                     >
@@ -147,15 +175,10 @@ export default function Header() {
             </NavigationMenu>
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a
-              href="#"
-              className="text-sm font-semibold leading-6 text-gray-900 inline-flex gap-2"
-            >
               <Button variant="default">
                 Join Us!
                 <EnvelopeIcon className="ml-2 h-5 w-5" aria-hidden="true" />
               </Button>
-            </a>
           </div>
         </nav>
         <Dialog

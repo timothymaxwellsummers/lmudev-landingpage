@@ -15,7 +15,10 @@ const fontSans = FontSans({
 });
 
 export const metadata: Metadata = {
-  title: "LMU Developers",
+  title: {
+    template: "%s • LMU Devs",
+    default: "LMU Developers",
+  },
   description: "Building Apps for and with the LMU Community",
 };
 

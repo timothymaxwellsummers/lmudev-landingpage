@@ -1,6 +1,8 @@
 import Image from "next/image";
 import PartnerImage from "../components/partners";
 import { partners } from './data/partners';
+import { Button } from "@/components/ui/button";
+import { ArrowBigRight, ArrowRight } from "lucide-react";
 
 
 
@@ -34,18 +36,8 @@ export default function Home() {
               team, create awesome projects, and grow together.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
-              <a
-                href="#"
-                className="rounded-md bg-green-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-green-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-              >
-                Join Us!
-              </a>
-              <a
-                href="#"
-                className="text-sm font-semibold leading-6 text-gray-900"
-              >
-                Learn more <span aria-hidden="true">→</span>
-              </a>
+              <Button className="bg-primary" variant="default">Join us!</Button>
+              <Button variant="link">Learn more <ArrowRight className="ml-1 h-4 w-4"/></Button>
             </div>
 
             <div className="mx-auto mt-14 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
