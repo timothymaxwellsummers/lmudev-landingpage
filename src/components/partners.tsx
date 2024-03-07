@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-interface SponsorComponentProps {
+interface PartnerImageProps {
   source: string;
   alt: string;
   href?: string;
@@ -8,7 +8,13 @@ interface SponsorComponentProps {
   height?: number | string;
 }
 
-const SponsorComponent: React.FC<SponsorComponentProps> = ({ source, alt, href = '#', width = 158, height = 48 }) => {
+const PartnerImage: React.FC<PartnerImageProps> = ({
+  source,
+  alt,
+  href = "#",
+  width = 158,
+  height = 48,
+}) => {
   return (
     <a href={href}>
       <img
@@ -22,4 +28,4 @@ const SponsorComponent: React.FC<SponsorComponentProps> = ({ source, alt, href =
   );
 };
 
-export default SponsorComponent;
+export default PartnerImage;

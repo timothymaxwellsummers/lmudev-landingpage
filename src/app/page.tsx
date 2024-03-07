@@ -1,39 +1,13 @@
 import Image from "next/image";
-import Header from "./header";
-import SponsorComponent from "./components/sponsors";
+import PartnerImage from "../components/partners";
+import { partners } from './data/partners';
 
-const sponsors = [
-  {
-    alt: "Transistor",
-    source:
-      "https://tailwindui.com/img/logos/158x48/transistor-logo-gray-900.svg",
-    href: "https://transistor.fm",
-  },
-  {
-    alt: "Reform",
-    source: "https://tailwindui.com/img/logos/158x48/reform-logo-gray-900.svg",
-    href: "https://transistor.fm",
-  },
-  {
-    alt: "Tuple",
-    source: "https://tailwindui.com/img/logos/158x48/tuple-logo-gray-900.svg",
-  },
-  {
-    alt: "SavvyCal",
-    source:
-      "https://tailwindui.com/img/logos/158x48/savvycal-logo-gray-900.svg",
-  },
-  {
-    alt: "Statamic",
-    source:
-      "https://tailwindui.com/img/logos/158x48/statamic-logo-gray-900.svg",
-  },
-];
+
+
 
 export default function Home() {
   return (
     <>
-      <Header />
       <div className="relative isolate px-6 pt-8 lg:px-8">
         <div
           className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
@@ -75,8 +49,9 @@ export default function Home() {
             </div>
 
             <div className="mx-auto mt-14 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
-              {sponsors.map((sponsor) => (
-                <SponsorComponent
+              {partners.map((sponsor, index) => (
+                <PartnerImage
+                  key={index}
                   source={sponsor.source}
                   alt={sponsor.alt}
                   href={sponsor.href}
