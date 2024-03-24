@@ -1,5 +1,5 @@
-import Image from "next/image";
-import Header from "./header";
+import Header from "./components/header";
+import Bento from "./components/bento";
 
 export default function Home() {
   return (
@@ -105,6 +105,7 @@ export default function Home() {
           />
         </div>
       </div>
+      <Bento />
     </>
   );
 }
