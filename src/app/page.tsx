@@ -2,6 +2,7 @@ import Image from "next/image";
 import PartnerImage from "../components/partners";
 import { partners } from './data/partners';
 import { Button } from "@/components/ui/button";
+import Bento from "@/components/bento";
 import { ArrowBigRight, ArrowRight } from "lucide-react";
 
 
@@ -75,6 +76,7 @@ export default function Home() {
           />
         </div>
       </div>
+      <Bento />
     </>
   );
 }
