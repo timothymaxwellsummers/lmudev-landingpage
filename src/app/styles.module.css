@@ -1,0 +1,18 @@
+.marquee {
+  @apply overflow-hidden relative w-full;
+}
+
+.marqueeContent {
+  @apply flex items-center space-x-3 pt-8;
+  animation: marquee 12s linear infinite;
+}
+
+/* Keyframes for the marquee effect */
+@keyframes marquee {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-218%);
+  }
+}
