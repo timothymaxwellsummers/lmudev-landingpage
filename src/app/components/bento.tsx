@@ -3,7 +3,7 @@ import Marquee from "react-fast-marquee";
 export default function Bento() {
   return (
     <section>
-      <div className="mx-auto px-6 max-w-6xl text-gray-500 pb-20">
+      <div className="mx-auto px-6 max-w-6xl text-gray-500 pb-20 mb-60">
         <div className="relative">
           <div className="relative z-10 grid gap-3 grid-cols-6">
             <div className="col-span-full lg:col-span-2 overflow-hidden flex relative p-8 rounded-xl bg-white border border-gray-200">
@@ -24,11 +24,11 @@ export default function Bento() {
                       >
                         <stop
                           offset="0%"
-                          style={{ stopColor: "#ff5858", stopOpacity: 0.9 }}
+                          style={{ stopColor: "#22c55e", stopOpacity: 0.9 }}
                         />
                         <stop
                           offset="100%"
-                          style={{ stopColor: "#f857a6", stopOpacity: 0.9 }}
+                          style={{ stopColor: "#16a34a", stopOpacity: 0.9 }}
                         />
                       </linearGradient>
                     </defs>
