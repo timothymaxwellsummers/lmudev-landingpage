@@ -44,43 +44,31 @@ export default function Home() {
                 Learn more <span aria-hidden="true">→</span>
               </a>
             </div>
-            <div className="mx-auto mt-14 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
-              <img
-                className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-                src="https://tailwindui.com/img/logos/158x48/transistor-logo-gray-900.svg"
-                alt="Transistor"
-                width={158}
-                height={48}
-              />
-              <img
-                className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-                src="https://tailwindui.com/img/logos/158x48/reform-logo-gray-900.svg"
-                alt="Reform"
-                width={158}
-                height={48}
-              />
-              <img
-                className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-                src="https://tailwindui.com/img/logos/158x48/tuple-logo-gray-900.svg"
-                alt="Tuple"
-                width={158}
-                height={48}
-              />
-              <img
-                className="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
-                src="https://tailwindui.com/img/logos/158x48/savvycal-logo-gray-900.svg"
-                alt="SavvyCal"
-                width={158}
-                height={48}
-              />
-              <img
-                className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
-                src="https://tailwindui.com/img/logos/158x48/statamic-logo-gray-900.svg"
-                alt="Statamic"
-                width={158}
-                height={48}
-              />
-            </div>
+            <div className="mx-auto mt-14 grid max-w-md grid-cols-3 items-center gap-x-8 gap-y-10 sm:max-w-md sm:grid-cols-3 sm:gap-x-10 lg:mx-auto lg:max-w-md lg:grid-cols-3">
+    <img
+      className="col-span-2 max-h-12 w-20 object-contain justify-self-center lg:col-span-1"
+      src="/LMUlogo.svg"
+      alt="LMU"
+      width={158}
+      height={48}
+    />
+    <img
+      className="col-span-2 max-h-10 w-20 object-contain justify-self-center lg:col-span-1"
+      src="/TUMlogo.svg"
+      alt="TUM"
+      width={158}
+      height={48}
+    />
+    <img
+      className="col-span-2 max-h-12 w-20 object-contain justify-self-center lg:col-span-1"
+      src="/SWMlogo.svg"
+      alt="SWM"
+      width={158}
+      height={48}
+    />
+</div>
+
+
             <div className="sm:mb-8 sm:flex sm:justify-center pt-8">
               <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
                 Working on solutions for these organisations.&nbsp;

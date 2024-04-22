@@ -36,6 +36,9 @@ export default function Bento() {
                   <h2 className="text-center font-semibold text-gray-950 text-3xl">
                     + Extend your CV
                   </h2>
+                  <p className="text-center text-gray-700 pt-2">
+                  &rarr; Non-Profit engagement
+                  </p>
                 </div>
               </div>
             </div>
