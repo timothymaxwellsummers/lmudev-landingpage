@@ -3,7 +3,7 @@ import Marquee from "react-fast-marquee";
 export default function Bento() {
   return (
     <section>
-      <div className="mx-auto px-6 max-w-6xl text-gray-500 pb-20 mb-60">
+      <div className="mx-auto px-6 max-w-6xl text-gray-500 mb-10 md:pb-20 md:mb-60">
         <div className="relative">
           <div className="relative z-10 grid gap-3 grid-cols-6">
             <div className="col-span-full lg:col-span-2 overflow-hidden flex relative p-8 rounded-xl bg-white border border-gray-200">
@@ -43,7 +43,6 @@ export default function Bento() {
                 </h2>
               </div>
             </div>
-
             <div className="col-span-full sm:col-span-3 lg:col-span-2 overflow-hidden relative p-8 rounded-xl bg-white border border-gray-200">
               <div>
                 <img src="./cvIllu.svg" alt="CV Icon" />
@@ -102,8 +101,8 @@ export default function Bento() {
               </div>
             </div>
             <div className="col-span-full lg:col-span-3 overflow-hidden p-8 rounded-xl bg-white border border-gray-200 flex items-center justify-center h-full">
-              <div className="text-4xl font-semibold w-full px-6 text-gray-950">
-                <div className="float-right">
+              <div className="text-3xl font-semibold w-full md:px-6 text-gray-950">
+                <div className="md:float-right">
                   Work on{" "}
                   <i className="bg-clip-text text-transparent bg-gradient-to-r from-green-500 to-green-600 pr-2">
                     real
@@ -111,7 +110,7 @@ export default function Bento() {
                   projects
                 </div>
                 <br />
-                <div className="text-nowrap pt-4">
+                <div className="text-nowrap md:pt-4">
                   For{" "}
                   <i className="bg-clip-text text-transparent bg-gradient-to-r from-green-500 to-green-600 pr-2">
                     real
@@ -124,7 +123,7 @@ export default function Bento() {
               <h2 className="text-lg font-medium text-gray-800 transition group-hover:text-purple-950 px-8">
                 Dive into your favourite tools!{" "}
               </h2>
-              <Marquee speed={50} className="pt-8">
+              <Marquee speed={50} className="pt-8 overflow-clip">
                 <img src="figma.png" alt="Tool Logo 1" className="h-20 px-2" />
                 <img src="vscode.png" alt="Tool Logo 2" className="h-20 px-2" />
                 <img src="notion.png" alt="Tool Logo 2" className="h-20 px-2" />
