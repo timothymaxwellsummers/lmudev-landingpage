@@ -3,6 +3,7 @@ import Marquee from "react-fast-marquee";
 export default function Bento() {
   return (
     <section>
+      <div id="bento" className="pt-24"></div>
       <div className="mx-auto px-6 max-w-6xl text-gray-500 mb-10 md:pb-20 md:mb-60">
         <div className="relative">
           <div className="relative z-10 grid gap-3 grid-cols-6">

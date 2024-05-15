@@ -33,13 +33,13 @@ export default function Home() {
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
-                href="#"
+                href="mailto:admin@lmu-dev.org"
                 className="rounded-md bg-green-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-green-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Join Us!
               </a>
               <a
-                href="#"
+                href="#bento"
                 className="text-sm font-semibold leading-6 text-gray-900"
               >
                 Learn more <span aria-hidden="true">→</span>
@@ -72,7 +72,7 @@ export default function Home() {
             <div className="sm:mb-8 sm:flex sm:justify-center pt-8">
               <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
                 Working on solutions for these organisations.&nbsp;
-                <a href="#" className="font-semibold text-green-500">
+                <a href="https://github.com/orgs/lmu-devs/repositories" target="_blank" className="font-semibold text-green-500">
                   <span className="absolute inset-0" aria-hidden="true" />
                   Find us on GitHub <span aria-hidden="true">&rarr;</span>
                 </a>
