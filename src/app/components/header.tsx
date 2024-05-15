@@ -12,10 +12,10 @@ export default function Header() {
 
   const navigation = [
     { name: "Vision", href: "#bento" },
-    { name: "Projects", href: "#"},
-    { name: "Team", href: "#"}, // You can define a specific message and icon for each item similarly
+    { name: "Projects", href: "#", onClick: () => alert("⚠️ This content is coming soon :)") },
+    { name: "Team", href: "#", onClick: () => alert("⚠️ This content is coming soon :)") },
   ];
-  
+
   return (
     <>
       <header className="absolute inset-x-0 top-0 z-50">
@@ -40,8 +40,16 @@ export default function Header() {
             </button>
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
-          {navigation.map((item) => (
-              <a key={item.name} href={item.href} className="text-sm font-semibold leading-6 text-gray-900">
+            {navigation.map((item) => (
+              <a
+                key={item.name}
+                href={item.href}
+                onClick={(e) => {
+                  e.preventDefault(); // Prevent the default link behavior
+                  item.onClick && item.onClick(); // Execute the onClick handler if it exists
+                }}
+                className="text-sm font-semibold leading-6 text-gray-900"
+              >
                 {item.name}
               </a>
             ))}
@@ -84,6 +92,10 @@ export default function Header() {
                     <a
                       key={item.name}
                       href={item.href}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        item.onClick && item.onClick();
+                      }}
                       className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                     >
                       {item.name}
