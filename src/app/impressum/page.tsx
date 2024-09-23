@@ -2,6 +2,16 @@ import React from 'react';
 
 const Impressum: React.FC = () => {
   return (
+    <div 
+    className="container mx-auto px-4 py-8 relative" 
+    style={{
+      minHeight: '100vh',
+      background: 
+       "linear-gradient(135deg, #ccffcc, #ffffff)",
+      color: "gray-600",
+    }}
+  >
+    
     <div className="container mx-auto px-4 py-8">
       <h1 className="text-3xl font-bold mb-4">Impressum</h1>
 
@@ -64,6 +74,7 @@ const Impressum: React.FC = () => {
           https://ec.europa.eu/consumers/odr
         </a>. Unsere E-Mail-Adresse finden Sie oben im Impressum.
       </p>
+    </div>
     </div>
   );
 };
