@@ -9,7 +9,7 @@ const Impressum: React.FC = () => {
 
       <h2 className="text-xl sm:text-2xl font-semibold mb-3">Angaben gemäß X TMG</h2>
       <p className="mb-4">
-        LMU Developer's
+        LMU Developers
         <br />
         Ludwig-Maximilians-Universität (LMU) München
         <br />
