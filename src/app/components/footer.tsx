@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="mx-auto max-w-6xl px-6 py-8">
         <div className="grid grid-cols-1 sm:grid-cols-4 gap-8 text-gray-600">
           <div>
-            <h2 className="text-lg font-semibold text-gray-900">bla bla</h2>
+            <h2 className="text-lg font-semibold text-gray-900">LMU Developers</h2>
             <p className="mt-2">
               Building innovative solutions for the community.
             </p>
