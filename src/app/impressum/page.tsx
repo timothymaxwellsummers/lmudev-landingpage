@@ -3,19 +3,11 @@ import React from 'react';
 const Impressum: React.FC = () => {
   return (
     <div 
-    className="container mx-auto px-4 py-8 relative" 
-    style={{
-      minHeight: '100vh',
-      background: 
-       "linear-gradient(135deg, #ccffcc, #ffffff)",
-      color: "gray-600",
-    }}
-  >
-    
-    <div className="container mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold mb-4">Impressum</h1>
+      className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 relative min-h-screen max-w-4xl"
+    >
+      <h1 className="text-2xl sm:text-3xl font-bold mb-6">Impressum</h1>
 
-      <h2 className="text-2xl font-semibold mb-2">Angaben gemäß X TMG</h2>
+      <h2 className="text-xl sm:text-2xl font-semibold mb-3">Angaben gemäß X TMG</h2>
       <p className="mb-4">
         LMU Developer's
         <br />
@@ -30,7 +22,7 @@ const Impressum: React.FC = () => {
         E-Mail: your-email@example.com
       </p>
 
-      <h2 className="text-2xl font-semibold mb-2">Vertreten durch</h2>
+      <h2 className="text-xl sm:text-2xl font-semibold mb-3">Vertreten durch</h2>
       <p className="mb-4">
         Max Mustermann
         <br />
@@ -74,7 +66,6 @@ const Impressum: React.FC = () => {
           https://ec.europa.eu/consumers/odr
         </a>. Unsere E-Mail-Adresse finden Sie oben im Impressum.
       </p>
-    </div>
     </div>
   );
 };

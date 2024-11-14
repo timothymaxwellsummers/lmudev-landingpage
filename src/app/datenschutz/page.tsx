@@ -3,17 +3,11 @@ import React from 'react';
 const Datenschutz: React.FC = () => {
   return (
     <div 
-      className="container mx-auto px-4 py-8 relative" 
-      style={{
-        minHeight: '100vh',
-        background: 
-         "linear-gradient(135deg, #ccffcc, #ffffff)",
-        color: "gray-600",
-      }}
+      className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 relative min-h-screen max-w-4xl"
     >
-      <h1 className="text-3xl font-bold mb-4">Datenschutzerklärung</h1>
+      <h1 className="text-2xl sm:text-3xl font-bold mb-6">Datenschutzerklärung</h1>
 
-      <h2 className="text-2xl font-semibold mb-2">1. Name und Kontaktdaten des Verantwortlichen</h2>
+      <h2 className="text-xl sm:text-2xl font-semibold mb-3">1. Name und Kontaktdaten des Verantwortlichen</h2>
       <p className="mb-4">
         Verantwortlicher im Sinne der Datenschutz-Grundverordnung (DSGVO) ist:
         <br />
@@ -33,8 +27,8 @@ const Datenschutz: React.FC = () => {
         [E-Mail-Adresse des Datenschutzbeauftragten]
       </p>
 
-      <h2 className="text-2xl text-gray-950 font-semibold mb-2">2. Erhebung und Speicherung personenbezogener Daten sowie Art und Zweck ihrer Verwendung</h2>
-      <h3 className="text-xl font-semibold mb-2">a Beim Besuch der Webseite</h3>
+      <h2 className="text-xl sm:text-2xl font-semibold mb-3">2. Erhebung und Speicherung personenbezogener Daten sowie Art und Zweck ihrer Verwendung</h2>
+      <h3 className="text-lg sm:text-xl font-semibold mb-2">a Beim Besuch der Webseite</h3>
       <p className="mb-4">
         Beim Aufrufen unserer Webseite werden durch den auf Ihrem Endgerät zum Einsatz kommenden Browser automatisch Informationen an den Server unserer Webseite gesendet. Diese Informationen werden temporär in einem sogenannten Logfile gespeichert. Folgende Informationen werden dabei ohne Ihr Zutun erfasst und bis zur automatisierten Löschung gespeichert:
         <br />
@@ -61,7 +55,7 @@ const Datenschutz: React.FC = () => {
         Die Rechtsgrundlage für die Datenverarbeitung ist Art. 6 Abs. 1 lit. f DSGVO. Unser berechtigtes Interesse folgt aus den oben aufgelisteten Zwecken zur Datenerhebung. In keinem Fall verwenden wir die erhobenen Daten zu dem Zweck, Rückschlüsse auf Ihre Person zu ziehen.
       </p>
 
-      <h3 className="text-xl font-semibold mb-2">b Nutzung der Mensa-App</h3>
+      <h3 className="text-lg sm:text-xl font-semibold mb-2">b Nutzung der Mensa-App</h3>
       <p className="mb-4">
         Für die Nutzung unserer Mensa-App, die Ihnen die Speisepläne der Universität zur Verfügung stellt, verarbeiten wir folgende personenbezogenen Daten:
         <br />
