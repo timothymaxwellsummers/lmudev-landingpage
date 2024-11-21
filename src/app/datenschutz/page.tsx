@@ -8,23 +8,14 @@ const Datenschutz: React.FC = () => {
       <h1 className="text-2xl sm:text-3xl font-bold mb-6">Datenschutzerklärung</h1>
 
       <h2 className="text-xl sm:text-2xl font-semibold mb-3">1. Name und Kontaktdaten des Verantwortlichen</h2>
-      <p className="mb-4">
+      <p className="my-4">
         Verantwortlicher im Sinne der Datenschutz-Grundverordnung (DSGVO) ist:
         <br />
-        Technikreferat der Universität [Name der Universität]
+        Technikreferat der StuVe der LMU München
         <br />
-        [Adresse]
+        Leopoldstraße 15, 80802 München
         <br />
-        [E-Mail-Adresse]
-        <br />
-        [Telefonnummer]
-      </p>
-      <p className="mb-4">
-        Bei Fragen zum Datenschutz können Sie sich auch an unseren Datenschutzbeauftragten wenden:
-        <br />
-        [Name des Datenschutzbeauftragten]
-        <br />
-        [E-Mail-Adresse des Datenschutzbeauftragten]
+        contact@lmu-dev.org
       </p>
 
       <h2 className="text-xl sm:text-2xl font-semibold mb-3">2. Erhebung und Speicherung personenbezogener Daten sowie Art und Zweck ihrer Verwendung</h2>
@@ -75,11 +66,6 @@ const Datenschutz: React.FC = () => {
         - für den Fall, dass für die Weitergabe eine gesetzliche Verpflichtung besteht (Art. 6 Abs. 1 lit. c DSGVO), sowie
         <br />
         - dies gesetzlich zulässig und für die Abwicklung von Vertragsverhältnissen mit Ihnen erforderlich ist (Art. 6 Abs. 1 lit. b DSGVO).
-      </p>
-
-      <h2 className="text-2xl font-semibold mb-2">4. Cookies</h2>
-      <p className="mb-4">
-        Unsere Webseite verwendet Cookies. Weitere Informationen dazu, welche Cookies wir verwenden und wie Sie diese deaktivieren können, finden Sie in unserer [Cookie-Richtlinie].
       </p>
 
       <h2 className="text-2xl font-semibold mb-2">5. Rechte der betroffenen Person</h2>

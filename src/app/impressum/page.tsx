@@ -11,29 +11,11 @@ const Impressum: React.FC = () => {
       <p className="mb-4">
         LMU Developers
         <br />
-        Ludwig-Maximilians-Universität (LMU) München
+        Technikreferat der StuVe der LMU München
         <br />
-        Leopoldstraße 15 
+        Leopoldstraße 15, 80802 München
         <br />
-         80802 München
-        <br />
-        Telefon: +49 (0) 123 456789
-        <br />
-        E-Mail: your-email@example.com
-      </p>
-
-      <h2 className="text-xl sm:text-2xl font-semibold mb-3">Vertreten durch</h2>
-      <p className="mb-4">
-        Max Mustermann
-        <br />
-        Musterfirma GmbH
-      </p>
-
-      <h2 className="text-2xl font-semibold mb-2">Umsatzsteuer-ID</h2>
-      <p className="mb-4">
-        Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz:
-        <br />
-        DE123456789
+        contact@lmu-dev.org
       </p>
 
       <h2 className="text-2xl font-semibold mb-2">Haftung für Inhalte</h2>
