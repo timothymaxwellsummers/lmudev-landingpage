@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { Dialog } from "@headlessui/react";
+import Image from "next/image";
 import {
   Bars3Icon,
   XMarkIcon,
@@ -26,7 +27,13 @@ export default function Header() {
           <div className="flex lg:flex-1">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">LMU Developers</span>
-              <img className="h-12 w-auto" src="/logoLMUdev.png" alt="" />
+              <Image 
+                className="h-12 w-auto" 
+                src="/stuve_logo.png" 
+                alt="StuVe Technikrefeat Logo" 
+                width={96}
+                height={48}
+              />
             </a>
           </div>
           <div className="flex lg:hidden">
@@ -56,7 +63,7 @@ export default function Header() {
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
             <a
-              href="mailto:admin@lmu-dev.org"
+              href="mailto:contact@lmu-dev.org"
               className="text-sm font-semibold leading-6 text-gray-900 inline-flex gap-2"
             >
               Contact us <EnvelopeIcon className="h-6 w-6" aria-hidden="true" />
@@ -74,7 +81,7 @@ export default function Header() {
             <div className="flex items-center justify-between">
               <a href="#" className="-m-1.5 p-1.5">
                 <span className="sr-only">LMU Developers</span>
-                <img className="h-12 w-auto" src="/logoLMUdev.png" alt="" />
+                <img className="h-12 w-auto" src="/stuve_logo.png" alt="StuVe Technikrefeat Logo" />
               </a>
               <button
                 type="button"
