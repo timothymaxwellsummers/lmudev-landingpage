@@ -12,8 +12,8 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navigation = [
-    { name: "Vision", href: "#bento" },
-    { name: "Projects", href: "#", onClick: () => alert("⚠️ This content is coming soon :)") },
+    { name: "Vision", href: "/#bento" },
+    { name: "Projects", href: "/projects" },
     { name: "Team", href: "#", onClick: () => alert("⚠️ This content is coming soon :)") },
   ];
 
@@ -25,7 +25,7 @@ export default function Header() {
           aria-label="Global"
         >
           <div className="flex lg:flex-1">
-            <a href="#" className="-m-1.5 p-1.5">
+            <a href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">LMU Developers</span>
               <Image 
                 className="h-12 w-auto" 
@@ -52,7 +52,6 @@ export default function Header() {
                 key={item.name}
                 href={item.href}
                 onClick={(e) => {
-                  e.preventDefault(); // Prevent the default link behavior
                   item.onClick && item.onClick(); // Execute the onClick handler if it exists
                 }}
                 className="text-sm font-semibold leading-6 text-gray-900"

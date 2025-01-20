@@ -17,10 +17,7 @@ export default function Footer() {
             <h2 className="text-lg font-semibold text-gray-900">Explore</h2>
             <ul className="mt-2 space-y-2">
               <li>
-                <a
-                  onClick={() => alert("⚠️ This content is coming soon :)")}
-                  className="hover:text-gray-800"
-                >
+                <a href="/projects" className="hover:text-gray-800">
                   Projects
                 </a>
               </li>
