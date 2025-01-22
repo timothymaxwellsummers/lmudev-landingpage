@@ -1,4 +1,5 @@
 'use client';
+
 import Image from 'next/image';
 import React from 'react';
 
@@ -26,8 +27,8 @@ export default function ProjectCard({
         <div className="flex-1 lg:flex-[2] flex flex-col justify-between">
           <div>
             <div className="flex flex-wrap items-center gap-4">
-                <h3 className="text-2xl font-semibold text-gray-900">{title}</h3>
-                <p className="text-sm tracking-tight text-green-600 pr-2">{status}</p>
+              <h3 className="text-2xl font-semibold text-gray-900">{title}</h3>
+              <p className="text-sm tracking-tight text-green-600 pr-2">{status}</p>
             </div>
             <div className="flex flex-wrap gap-2 mt-4">
               {tags.map((tag, index) => (
@@ -40,13 +41,14 @@ export default function ProjectCard({
               ))}
             </div>
             <div className="mt-8 space-y-4">
-                <p className="text-sm text-gray-600 leading-[1.85]">
-                    {description}
-                </p>
+              <p className="text-sm text-gray-600 leading-[1.85]">
+                {description}
+              </p>
             </div>
           </div>
-          <div className="mt-8 flex flex-wrap gap-x-8 gap-y-4 lg:mt-0">
-            {/* Links */}
+
+          {/* Links Section for Desktop */}
+          <div className="hidden lg:flex mt-8 flex-wrap gap-x-8 gap-y-4">
             {links.map((link, index) => (
               <a
                 key={index}
@@ -68,7 +70,7 @@ export default function ProjectCard({
         </div>
 
         {/* Image Section */}
-        <div className="lg:flex-[1] flex justify-center items-center">
+        <div className="lg:flex-[1] flex flex-col items-center">
           <Image
             src={previewImage}
             alt={title}
@@ -76,6 +78,27 @@ export default function ProjectCard({
             height={560}
             className="h-auto max-h-[420px] object-contain rounded-lg"
           />
+
+          {/* Links Section for Mobile and Tablet */}
+          <div className="mt-8 flex flex-wrap gap-x-8 gap-y-4 lg:hidden">
+            {links.map((link, index) => (
+              <a
+                key={index}
+                href={link.url}
+                className="flex items-center gap-2 text-sm text-gray-700 font-medium hover:underline"
+              >
+                <Image
+                  src={link.iconPath}
+                  alt={`${link.text} Icon`}
+                  width={20}
+                  height={20}
+                  className="text-gray-300"
+                  style={{ color: '#D1D5DB' }}
+                />
+                {link.text}
+              </a>
+            ))}
+          </div>
         </div>
       </div>
     </div>

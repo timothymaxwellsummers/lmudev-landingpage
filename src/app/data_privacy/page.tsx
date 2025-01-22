@@ -23,6 +23,7 @@ const Datenschutz: React.FC = () => {
       <p className="mb-4">
         Beim Aufrufen unserer Webseite werden durch den auf Ihrem Endgerät zum Einsatz kommenden Browser automatisch Informationen an den Server unserer Webseite gesendet. Diese Informationen werden temporär in einem sogenannten Logfile gespeichert. Folgende Informationen werden dabei ohne Ihr Zutun erfasst und bis zur automatisierten Löschung gespeichert:
         <br />
+        <br />
         - IP-Adresse des anfragenden Rechners,
         <br />
         - Datum und Uhrzeit des Zugriffs,
@@ -33,7 +34,9 @@ const Datenschutz: React.FC = () => {
         <br />
         - verwendeter Browser und ggf. das Betriebssystem Ihres Rechners sowie der Name Ihres Access-Providers.
         <br />
+        <br />
         Die genannten Daten werden durch uns zu folgenden Zwecken verarbeitet:
+        <br />
         <br />
         - Gewährleistung eines reibungslosen Verbindungsaufbaus der Webseite,
         <br />
@@ -43,14 +46,19 @@ const Datenschutz: React.FC = () => {
         <br />
         - zu weiteren administrativen Zwecken.
         <br />
+        <br />
         Die Rechtsgrundlage für die Datenverarbeitung ist Art. 6 Abs. 1 lit. f DSGVO. Unser berechtigtes Interesse folgt aus den oben aufgelisteten Zwecken zur Datenerhebung. In keinem Fall verwenden wir die erhobenen Daten zu dem Zweck, Rückschlüsse auf Ihre Person zu ziehen.
       </p>
 
-      <h3 className="text-lg sm:text-xl font-semibold mb-2">b Nutzung der Mensa-App</h3>
+      <h3 className="text-lg sm:text-xl font-semibold mb-2">b Nutzung der LMU Students App</h3>
       <p className="mb-4">
-        Für die Nutzung unserer Mensa-App, die Ihnen die Speisepläne der Universität zur Verfügung stellt, verarbeiten wir folgende personenbezogenen Daten:
+        Für die Nutzung der LMU Students App werden keine Daten mit der Person verbunden. Dennoch erheben und verwalten wir folgende Daten:
         <br />
-        - [Name, E-Mail-Adresse, IP-Adresse, falls zutreffend] Diese Daten werden zur Bereitstellung der App-Funktionalitäten benötigt und dienen ausschließlich der Verbesserung der Nutzererfahrung.
+        <br />
+        - Identifier, User-Location, anonymisierte Nutzungsdaten.
+        <br />
+        <br />
+        Diese Daten werden zur Bereitstellung der App-Funktionalitäten benötigt und dienen ausschließlich der Verbesserung der Nutzererfahrung.
         <br />
         Die Rechtsgrundlage für die Datenverarbeitung ist Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung).
       </p>
@@ -58,6 +66,7 @@ const Datenschutz: React.FC = () => {
       <h2 className="text-2xl font-semibold mb-2">3. Weitergabe von Daten</h2>
       <p className="mb-4">
         Eine Übermittlung Ihrer persönlichen Daten an Dritte zu anderen als den im Folgenden aufgeführten Zwecken findet nicht statt. Wir geben Ihre persönlichen Daten nur an Dritte weiter, wenn:
+        <br />
         <br />
         - Sie Ihre ausdrückliche Einwilligung dazu erteilt haben (Art. 6 Abs. 1 lit. a DSGVO),
         <br />
@@ -71,6 +80,7 @@ const Datenschutz: React.FC = () => {
       <h2 className="text-2xl font-semibold mb-2">5. Rechte der betroffenen Person</h2>
       <p className="mb-4">
         Sie haben das Recht:
+        <br />
         <br />
         - gemäß Art. 15 DSGVO Auskunft über Ihre von uns verarbeiteten personenbezogenen Daten zu verlangen,
         <br />

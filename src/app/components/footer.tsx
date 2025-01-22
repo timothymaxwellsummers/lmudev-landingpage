@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -16,23 +17,20 @@ export default function Footer() {
           <div>
             <h2 className="text-lg font-semibold text-gray-900">Explore</h2>
             <ul className="mt-2 space-y-2">
+            <li>
+              <Link href="/" className="hover:text-gray-800">
+                About
+              </Link>
+              </li>
               <li>
-                <a href="/projects" className="hover:text-gray-800">
+                <Link href="/projects" className="hover:text-gray-800">
                   Projects
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  onClick={() => alert("⚠️ This content is coming soon :)")}
-                  className="hover:text-gray-800"
-                >
+                <Link href="/team" className="hover:text-gray-800">
                   Team
-                </a>
-              </li>
-              <li>
-                <a href="#bento" className="hover:text-gray-800">
-                  About Us
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -84,14 +82,14 @@ export default function Footer() {
             <h2 className="text-lg font-semibold text-gray-900">Legal</h2>
             <ul className="mt-2 space-y-2">
               <li>
-                <a href="/datenschutz" className="hover:text-gray-800">
+                <Link href="/data_privacy" className="hover:text-gray-800">
                   Data Privacy
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/impressum" className="hover:text-gray-800">
+                <Link href="/legal_notice" className="hover:text-gray-800">
                   Legal Notice
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

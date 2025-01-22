@@ -125,20 +125,16 @@ export default function Bento() {
                 Dive into your favourite tools!{" "}
               </h2>
               <Marquee speed={50} className="pt-8 overflow-clip">
-                <img src="figma.png" alt="Tool Logo 1" className="h-20 px-2" />
-                <img src="vscode.png" alt="Tool Logo 2" className="h-20 px-2" />
-                <img src="notion.png" alt="Tool Logo 2" className="h-20 px-2" />
-                <img src="node.png" alt="Tool Logo 1" className="h-20 px-2" />
-                <img src="next.png" alt="Tool Logo 2" className="h-20 px-2" />
-                <img
-                  src="flutter.png"
-                  alt="Tool Logo 2"
-                  className="h-20 px-2"
-                />
-                <img src="git.png" alt="Tool Logo 2" className="h-20 px-2" />
-                <img src="react.png" alt="Tool Logo 2" className="h-20 px-2" />
-                <img src="vercel.png" alt="Tool Logo 2" className="h-20 px-2" />
-                <img src="aws.png" alt="Tool Logo 2" className="h-20 px-2" />
+                <img src="/technologies/figma.png" alt="Figma" className="h-20 px-2" />
+                <img src="/technologies/vscode.png" alt="VSCode" className="h-20 px-2" />
+                <img src="/technologies/notion.png" alt="Notion" className="h-20 px-2" />
+                <img src="/technologies/node.png" alt="Node.js" className="h-20 px-2" />
+                <img src="/technologies/next.png" alt="Next.js" className="h-20 px-2" />
+                <img src="/technologies/flutter.png" alt="Flutter" className="h-20 px-2" />
+                <img src="/technologies/git.png" alt="Git" className="h-20 px-2" />
+                <img src="/technologies/react.png" alt="React" className="h-20 px-2" />
+                <img src="/technologies/vercel.png" alt="Vercel" className="h-20 px-2" />
+                <img src="/technologies/aws.png" alt="AWS" className="h-20 px-2" />
               </Marquee>
             </div>
           </div>

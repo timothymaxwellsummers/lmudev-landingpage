@@ -1,7 +1,10 @@
+"use client";
+import Image from "next/image";
 import Header from "./components/header";
 import Bento from "./components/bento";
 import Footer from "./components/footer";
 import BackgroundTop from "./components/background_top";
+import BackgroundCenter from "./components/background_center";
 import BackgroundBottom from "./components/background_bottom";
 
 export default function Home() {
@@ -37,29 +40,32 @@ export default function Home() {
               </a>
             </div>
             <div className="mx-auto mt-14 mb-5 md:mb-auto grid max-w-md grid-cols-3 items-center gap-x-8 gap-y-10 sm:max-w-md sm:grid-cols-3 sm:gap-x-10 lg:mx-auto lg:max-w-md lg:grid-cols-3">
-              <img
-                className="max-h-10 md:max-h-12 w-20 object-contain justify-self-center col-span-1"
-                src="/LMUlogo.svg"
+              <Image
+                className="max-h-10 md:max-h-12 w-full object-contain justify-self-center col-span-1"
+                src="/partners/lmu_logo.svg"
                 alt="LMU"
-                width={158}
-                height={48}
+                width={208}
+                height={64}
+                quality={100}
               />
-              <img
-                className="max-h-10 md:max-h-12 w-20 object-contain justify-self-center col-span-1"
-                src="/TUMlogo.svg"
-                alt="TUM"
-                width={158}
-                height={48}
+              <Image
+                className="max-h-10 md:max-h-12 w-full object-contain justify-self-center col-span-1"
+                src="/partners/stuve_logo.svg"
+                alt="StuVe LMU"
+                width={208}
+                height={64}
+                quality={100}
               />
-              <img
-                className="max-h-10 md:max-h-12 w-20 object-contain justify-self-center col-span-1"
-                src="/SWMlogo.svg"
-                alt="SWM"
-                width={158}
-                height={48}
+              <Image
+                className="max-h-10 md:max-h-12 w-full object-contain justify-self-center col-span-1"
+                src="/partners/stwm_logo.svg"
+                alt="Studierendenwerk München"
+                width={208}
+                height={64}
+                quality={100}
               />
             </div>
-
+            <BackgroundCenter />
             <div className="sm:mb-8 sm:flex sm:justify-center pt-8">
               <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
                 Working on solutions for these organisations.&nbsp;
@@ -71,18 +77,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div
-          className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
-          aria-hidden="true"
-        >
-          <div
-            className="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#378B29] to-[#74D680] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
-            style={{
-              clipPath:
-                "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
-            }}
-          />
-        </div>
+        
       </div>
       <Bento />
       <Footer />

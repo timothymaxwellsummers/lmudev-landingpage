@@ -12,9 +12,9 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navigation = [
-    { name: "Vision", href: "/#bento" },
+    { name: "About", href: "/" },
     { name: "Projects", href: "/projects" },
-    { name: "Team", href: "#", onClick: () => alert("⚠️ This content is coming soon :)") },
+    { name: "Team", href: "/team" },
   ];
 
   return (
@@ -29,7 +29,7 @@ export default function Header() {
               <span className="sr-only">LMU Developers</span>
               <Image 
                 className="h-12 w-auto" 
-                src="/stuve_logo.png" 
+                src="/technikreferat_logo.png" 
                 alt="StuVe Technikrefeat Logo" 
                 width={96}
                 height={48}
@@ -51,9 +51,6 @@ export default function Header() {
               <a
                 key={item.name}
                 href={item.href}
-                onClick={(e) => {
-                  item.onClick && item.onClick(); // Execute the onClick handler if it exists
-                }}
                 className="text-sm font-semibold leading-6 text-gray-900"
               >
                 {item.name}
@@ -80,7 +77,7 @@ export default function Header() {
             <div className="flex items-center justify-between">
               <a href="#" className="-m-1.5 p-1.5">
                 <span className="sr-only">LMU Developers</span>
-                <img className="h-12 w-auto" src="/stuve_logo.png" alt="StuVe Technikrefeat Logo" />
+                <img className="h-12 w-auto" src="/technikreferat_logo.png" alt="StuVe Technikrefeat Logo" />
               </a>
               <button
                 type="button"
@@ -98,10 +95,6 @@ export default function Header() {
                     <a
                       key={item.name}
                       href={item.href}
-                      onClick={(e) => {
-                        e.preventDefault();
-                        item.onClick && item.onClick();
-                      }}
                       className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                     >
                       {item.name}
