@@ -21,8 +21,8 @@ export default function ProjectCard({
   links,
 }: ProjectCardProps) {
   return (
-    <div className="max-w-6xl mx-auto p-8 border border-gray-200 rounded-xl bg-white">
-      <div className="flex flex-col lg:flex-row gap-8 h-full">
+    <div className="h-full flex flex-col max-w-6xl mx-auto p-8 border border-gray-200 rounded-xl bg-white">
+      <div className="flex flex-1 flex-col lg:flex-row gap-8">
         {/* Project Details Section */}
         <div className="flex-1 lg:flex-[2] flex flex-col justify-between">
           <div>
@@ -71,16 +71,18 @@ export default function ProjectCard({
 
         {/* Image Section */}
         <div className="lg:flex-[1] flex flex-col items-center">
-          <Image
-            src={previewImage}
-            alt={title}
-            width={448}
-            height={560}
-            className="h-auto max-h-[420px] object-contain rounded-lg"
-          />
+          <div className="relative w-full max-w-[448px] h-[320px] lg:h-[420px]">
+            <Image
+              src={previewImage}
+              alt={title}
+              layout="fill"
+              objectFit="contain"
+              className="rounded-lg"
+            />
+          </div>
 
           {/* Links Section for Mobile and Tablet */}
-          <div className="mt-8 flex flex-wrap gap-x-8 gap-y-4 lg:hidden">
+          <div className="w-full mt-8 flex flex-wrap justify-center gap-x-8 gap-y-4 lg:hidden">
             {links.map((link, index) => (
               <a
                 key={index}

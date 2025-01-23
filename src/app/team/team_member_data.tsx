@@ -10,7 +10,7 @@ interface TeamMemberData {
 export const team: TeamMemberData[] = [
     {
         name: "Lukas Plenk",
-        image: "/team/avatar_placeholder_male.png",
+        image: "/team/lukas.jpeg",
         links: [
             {
             url: "https://github.com/LukPle",
@@ -24,7 +24,7 @@ export const team: TeamMemberData[] = [
     },
     {
         name: "Paul Walter",
-        image: "/team/avatar_placeholder_male.png",
+        image: "/team/paul.jpeg",
         links: [
             {
             url: "https://github.com/BitterSchoki",
@@ -38,7 +38,7 @@ export const team: TeamMemberData[] = [
     },
     {
         name: "Raphael Wennmacher",
-        image: "/team/avatar_placeholder_male.png",
+        image: "/team/raffi.jpeg",
         links: [
           {
             url: "https://github.com/rpgraffi",
@@ -52,7 +52,7 @@ export const team: TeamMemberData[] = [
       },
       {
         name: "Timothy Summers",
-        image: "/team/avatar_placeholder_male.png",
+        image: "/team/tim.jpeg",
         links: [
           {
             url: "https://github.com/timothymaxwellsummers",
@@ -66,7 +66,7 @@ export const team: TeamMemberData[] = [
       },
       {
         name: "Fiona Lau",
-        image: "/team/avatar_placeholder_female.png",
+        image: "/team/fiona.jpeg",
         links: [
           {
             url: "https://github.com/blackSwan566",
@@ -80,7 +80,7 @@ export const team: TeamMemberData[] = [
       },
       {
         name: "Anton Rockenstein",
-        image: "/team/avatar_placeholder_male.png",
+        image: "/team/anton.jpg",
         links: [
           {
             url: "https://github.com/SirAntonySir",
