@@ -52,7 +52,7 @@ export const projects: ProjectData[] = [
         "Vercel",
         ],
         description:
-        "The webiste you are currently on. This is the central hub for our student organization. It showcases the projects and team members of LMU Developers. The website still gets updates from time to time and will feature more conetent in the future.",
+        "The webiste you are currently on. This is the central hub for our student organization. It showcases the projects and team members of LMU Developers. The website still gets updates from time to time and will feature more content in the future.",
         previewImage: "/projects/lmudev_website_preview.png",
         links: [
         {
