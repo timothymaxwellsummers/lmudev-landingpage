@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from "../components/header";
+import Footer from "../components/footer";
 
 export default function DataPrivacy() {
   return (
@@ -29,13 +30,13 @@ export default function DataPrivacy() {
 
         <h2 className="text-xl sm:text-2xl font-semibold mb-3">Data Collection and Processing</h2>
 
-        <h3 className="text-lg sm:text-xl font-semibold mb-3">Website</h3>
+        <h3 className="text-lg sm:text-xl font-semibold mb-3">Website • LMU Developers</h3>
         <ul className="list-disc ml-6 mb-8">
           <li><strong>No Data Collection:</strong> Our website does not collect personal data or track your activities.</li>
           <li><strong>Third-Party Links:</strong> The website may contain links to external websites. We are not responsible for the privacy practices or content of these external sites.</li>
         </ul>
 
-        <h3 className="text-lg sm:text-xl font-semibold mb-3">Mobile Application</h3>
+        <h3 className="text-lg sm:text-xl font-semibold mb-3">Mobile Application • LMU Students</h3>
         <ul className="list-disc ml-6 mb-4">
           <li><strong>Data Collected:</strong> We collect anonymized usage data to analyze app performance and improve services.</li>
           <li><strong>Anonymization:</strong> All collected data is strictly anonymized and cannot be traced back to any individual.</li>
@@ -131,6 +132,7 @@ export default function DataPrivacy() {
         <p className="mt-12 mb-12">Effective Date: 26.03.2025</p>            
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

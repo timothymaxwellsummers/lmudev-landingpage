@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from "../components/header";
+import Footer from "../components/footer";
 
 export default function LegalNotice() {
   return (
@@ -11,8 +12,16 @@ export default function LegalNotice() {
 
           <h2 className="text-xl sm:text-2xl font-semibold mb-3">LMU Developers</h2>
           <p className="mb-8">
-            Official student organization of the LMU Munich. We build software solutions that
-            improve student life at LMU.
+            <p className="mb-4">
+              Official student organization of the LMU Munich. We build software solutions that
+              improve student life at LMU.
+            </p>
+            <p>
+              As a student initiative, we are affiliated with the student representation council (StuVe) 
+              of Ludwig Maximilian University of Munich and work on behalf of the students. We do not speak 
+              on behalf of official representants or institutions. Our products and services are student 
+              driven and supported but not officially endorsed by the university.
+            </p>
           </p>
 
           <h2 className="text-xl sm:text-2xl font-semibold mb-3">Contact</h2>
@@ -62,6 +71,7 @@ export default function LegalNotice() {
           <p className="mt-12 mb-12">Information under § 5 DDG</p>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

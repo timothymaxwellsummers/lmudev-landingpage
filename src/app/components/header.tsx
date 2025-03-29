@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import { usePathname } from 'next/navigation';
 import { Dialog } from "@headlessui/react";
 import Image from "next/image";
 import {
@@ -10,6 +11,7 @@ import {
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   const navigation = [
     { name: "About", href: "/" },
@@ -51,7 +53,11 @@ export default function Header() {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-sm font-semibold leading-6 text-gray-900"
+                className={`text-sm font-semibold leading-6 ${
+                  pathname === item.href 
+                    ? "text-green-600" 
+                    : "text-gray-900 hover:text-gray-600"
+                }`}
               >
                 {item.name}
               </a>
@@ -95,7 +101,11 @@ export default function Header() {
                     <a
                       key={item.name}
                       href={item.href}
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                      className={`-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 ${
+                        pathname === item.href 
+                          ? "text-green-600 bg-gray-50" 
+                          : "text-gray-900 hover:bg-gray-50"
+                      }`}
                     >
                       {item.name}
                     </a>
