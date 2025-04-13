@@ -37,6 +37,11 @@ export const projects: ProjectData[] = [
             url: "https://github.com/lmu-devs/lmu_app_backend",
             iconPath: "/github.svg",
         },
+        {
+            text: "Get the App",
+            url: "https://lmu-app.lmu-dev.org",
+            iconPath: "/download.svg",
+        },
         ],
     },
     {
