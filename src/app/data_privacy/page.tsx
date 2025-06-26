@@ -32,7 +32,7 @@ export default function DataPrivacy() {
 
         <h3 className="text-lg sm:text-xl font-semibold mb-3">Website • LMU Developers</h3>
         <ul className="list-disc ml-6 mb-8">
-          <li><strong>No Data Collection:</strong> Our website does not collect personal data or track your activities.</li>
+          <li><strong>No Data Collection:</strong> Our website does not collect any data or track activities.</li>
           <li><strong>Third-Party Links:</strong> The website may contain links to external websites. We are not responsible for the privacy practices or content of these external sites.</li>
         </ul>
 
@@ -43,8 +43,14 @@ export default function DataPrivacy() {
           <li><strong>Location Data:</strong> While location data may be used for certain app functionalities, it remains on your device and is not stored on our servers.</li>
           <li><strong>User Preferences:</strong> If you mark preferences within the app (e.g., favourites), this data is stored on our servers located in Germany.</li>
         </ul>
+        <p className="mb-4">
+          Our mobile application is designed with a privacy-first approach. We do not collect or store personally identifiable information. By downloading, installing, or using our application, users implicitly consent to our data processing practices stated above. The act of using the application constitutes acceptance of our data privacy terms, as no personal data is processed or stored that could identify individual users. All users are provided with the option to read the privacy policies at first app start before any data is collected and later in settings.
+        </p>
+        <p className="mb-4">
+          Starting with app version 1.1.1, we use Firebase Analytics to collect usage data such as clicked elements or time spent on a page. This information helps us identify which features are used most and where users encounter issues. We do not give any identifiers to Firebase at all. We do collect information regarding your OS version, app version, language, and theme which all are not linked to any sort of account or user identifier. Firebase itself may collect device or session identifiers which we do not have control of and take care safely. Users have the option to opt-out of analytics in settings.
+        </p>
         <p className="mb-8">
-          Our mobile application is designed with a privacy-first approach. We do not collect or store personally identifiable information. By downloading, installing, or using our application, users implicitly consent to our data processing practices stated above. The act of using the application constitutes acceptance of our data privacy terms, as no personal data is processed or stored that could identify individual users.
+          For more information about Firebase Analytics lookup <a href="https://firebase.google.com/support/privacy" className="underline text-green-600">Firebase Privacy Policy</a>.
         </p>
 
         <h2 className="text-xl sm:text-2xl font-semibold mb-3">Legal Basis for Processing</h2>
@@ -56,7 +62,7 @@ export default function DataPrivacy() {
         <h2 className="text-xl sm:text-2xl font-semibold mb-3">Data Sharing</h2>
         <p className="mb-8">
           <p className="mb-4">
-            We may share anonymized data with academic institutions and partner organizations for research and development purposes. Since the data is strictly anonymized, it cannot be linked to an individual. We do not sell or share personal data with third parties for commercial purposes.
+            We may share data with academic institutions and partner organizations for research and development purposes. Since the data is strictly anonymized, it cannot be linked to an individual. We do not sell or share personal data with third parties for commercial purposes.
           </p>
           <p>
             In cases where we work with third-party data processors, we ensure they comply with data protection obligations under Article 28 of the General Data Protection Regulation (GDPR). All data-sharing agreements include provisions to maintain the confidentiality, integrity, and security of the data.
@@ -75,11 +81,11 @@ export default function DataPrivacy() {
           <li><strong>Objection:</strong> Object to processing based on legitimate interests.</li>
           <li><strong>Restriction:</strong> Request temporary restriction of data processing.</li>
         </ul>
-        <p>
-          To exercise your rights, please contact us at <strong>contact@lmu-dev.org</strong>.
+        <p className="mb-4">
+          To exercise your rights, please contact us at <strong><a href="mailto:contact@lmu-dev.org">contact@lmu-dev.org</a></strong>.
         </p>
         <p className="mb-8">
-          Since we only process anonymized data, we may not be able to identify your data anyway.
+          Since we only process anonymized data, we may not be able to identify your data anyway. Please use the available options inside the app settings to delete any user created information loaclly on your device as well as on our servers.
         </p>
 
         <h2 className="text-xl sm:text-2xl font-semibold mb-3">Security Measures</h2>
@@ -129,7 +135,7 @@ export default function DataPrivacy() {
           We may update this Data Privacy Declaration from time to time. Please check our website or app for the latest version.
         </p>
 
-        <p className="mt-12 mb-12">Effective Date: 26.03.2025</p>            
+        <p className="mt-12 mb-12">Effective Date: 26.06.2025</p>            
         </div>
       </div>
       <Footer />
