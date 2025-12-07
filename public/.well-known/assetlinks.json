@@ -1,0 +1,13 @@
+[
+    {
+        "relation": ["delegate_permission/common.handle_all_urls"],
+        "target": {
+        "namespace": "android_app",
+        "package_name": "com.lmu_dev.lmu_app",
+        "sha256_cert_fingerprints": [
+            "D3:62:BC:4F:33:BB:D2:90:FB:87:4A:32:2B:55:B0:28:A9:B1:69:69:8A:43:67:BC:B9:82:F8:5F:18:99:57:04",
+            "FD:BA:79:E1:C4:16:AA:44:6C:98:53:97:BA:3B:58:95:C9:D6:D0:44:BC:D9:B9:B5:5C:C5:BC:F4:85:13:A2:F6"
+        ]
+        }
+    }
+]
