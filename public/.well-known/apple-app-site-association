@@ -1,11 +1,16 @@
 {
-  "applinks": {
-    "apps": [],
-    "details": [
-      {
-        "appID": "8Z3GTA5Z2J.com.lmu-dev.lmu-app",
-        "paths": [ "*" ]
-      }
-    ]
-  }
+    "applinks": {
+      "apps": [],
+      "details": [
+        {
+          "appIDs": [
+              "8Z3GTA5Z2J.com.lmu-dev.lmu-app.dev",
+              "8Z3GTA5Z2J.com.lmu-dev.lmu-app"
+          ],
+          "paths": [
+              "/app/*"
+          ]
+        }
+      ]
+    }
 }
