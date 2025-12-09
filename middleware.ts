@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 
-const APP_PREFIX = 'app/';
+const APP_PREFIX = 'app';
 const APP_LANDING_PAGE = 'https://lmu-app.lmu-dev.org/';
 
 export function middleware(request: NextRequest) {
