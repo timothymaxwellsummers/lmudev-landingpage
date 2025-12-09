@@ -1,13 +1,13 @@
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 
-const APP_PREFIX = '/app'; 
+const APP_URL = 'https://www.lmu-dev.org/app'; 
 const APP_STORE_PAGE = 'https://lmu-app.lmu-dev.org/';
 
 export function middleware(request: NextRequest) {
   const url = request.nextUrl.clone();
   
-  if (url.pathname === APP_PREFIX || url.pathname.startsWith(APP_PREFIX + '/')) {
+  if (url.href.startsWith(APP_URL)) {
     console.log('Middleware Redirecting:', url.pathname); 
 
     url.href = APP_STORE_PAGE;
