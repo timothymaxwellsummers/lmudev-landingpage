@@ -8,6 +8,8 @@ export function middleware(request: NextRequest) {
   const url = request.nextUrl.clone();
   
   if (url.pathname === APP_PREFIX || url.pathname.startsWith(APP_PREFIX + '/')) {
+    console.log('Middleware Redirecting:', url.pathname); 
+
     url.href = APP_STORE_PAGE;
     
     return NextResponse.redirect(url, 308); 
@@ -17,5 +19,9 @@ export function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: '/app/:path*',
+  matcher: [
+    '/app',
+    '/app/:path*',
+  ],
+  skipTrailingSlashRedirect: true, 
 };
