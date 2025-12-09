@@ -13,6 +13,16 @@ const nextConfig = {
         },
       ];
     },
+
+    async redirects() {
+      return [
+        {
+          source: '/app/:path*', 
+          destination: 'https://lmu-app.lmu-dev.org/', 
+          permanent: true, 
+        },
+      ];
+    },
 };
 
 export default nextConfig;
